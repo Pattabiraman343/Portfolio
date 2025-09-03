@@ -1,0 +1,6 @@
+
+  <svg viewBox="0 0 48 48" width={width} height={height} xmlns="http://www.w3.org/2000/svg">
+    <path fill="#E44D26" d="M6,0 L42,0 L38,44 L24,48 L10,44 Z"/>
+    <path fill="#F16529" d="M24,45 L35,41 L38,3 H24 Z"/>
+    <path fill="#EBEBEB" d="M24,22 L12,22 L12,18 H24 Z M24,28 L24,22 L36,22 L36,26 Z"/>
+  </svg>

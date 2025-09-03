@@ -1,0 +1,213 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC:wght@400..700&family=Chicle&family=Climate+Crisis&family=Ga+Maamli&family=Ingrid+Darling&family=Merienda:wght@300..900&family=Mozilla+Headline:wght@200..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Whisper&display=swap');
+:root {
+  --vivid-red-color: oklch(0.64 0.2664 12.71);
+  --padding: 24px;
+
+  /* Default Dark Theme */
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --muted-text: #cccccc;
+  --heading-color: #ffffff;
+  --para-color: floralwhite;
+  --image-border-color: #333;
+}
+
+/* Light Theme */
+.light {
+  --bg-color: #f5f5f5;
+  --text-color: #212121;
+  --muted-text: #555555;
+  --heading-color: #212121;
+  --para-color: #333;
+  --image-border-color: #ddd;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.chill-body-unique {
+  width: 100%;
+  min-height: 150dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  margin-top: 12rem;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.vertical-heading {
+  position: absolute;
+  top: 98%;
+  transform: translateY(-50%) rotate(-90deg);
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(40px, 6vw, 90px);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffc1079e;  letter-spacing: 0.2em;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  transition: color 0.5s;
+}
+
+.vertical-heading.left {
+  left: var(--padding);
+  transform-origin: left center;
+}
+
+.vertical-heading.right {
+  right: var(--padding);
+  transform: translateY(-50%) rotate(90deg);
+  transform-origin: right center;
+}
+
+.heading-unique {
+  color: var(--heading-color);
+  position: absolute;
+  top: var(--padding);
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  transition: color 0.5s;
+}
+
+.arrow-unique {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content-section {
+  max-width: 800px;
+  margin: 10vh auto;
+  text-align: center;
+}
+
+.para-unique {
+  color: var(--para-color);
+  font-family: "Ga Maamli", sans-serif;
+  font-size: clamp(16px, 2.5vw, 28px);
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  transition: color 0.5s;
+}
+
+.para-unique::selection {
+  background-color: var(--vivid-red-color);
+}
+
+.word-unique {
+  display: inline-block;
+  padding: 0 2px;
+}
+
+.image-section {
+  margin: 8vh 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.cool-image {
+  width: 100%;
+  min-width: 717px;
+  max-width: 1800px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 3rem;
+  object-fit: cover;
+  margin: 0 auto;
+  border: 2px solid var(--image-border-color);
+  transition: border-color 0.5s;
+}
+
+@media (max-width: 1200px) {
+  .cool-image {
+    min-width: 500px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .cool-image {
+    min-width: 300px;
+    height: auto;
+    border-radius: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cool-image {
+    min-width: 100%;
+    height: auto;
+    border-radius: 1.5rem;
+  }
+}
+
+#pointer-unique {
+  background-color: var(--vivid-red-color);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  translate: -50% -50%;
+  pointer-events: none;
+  clip-path: polygon(
+    100% 50%,
+    77.72% 61.48%,
+    85.36% 85.36%,
+    61.48% 77.72%,
+    50% 100%,
+    38.52% 77.72%,
+    14.64% 85.36%,
+    22.28% 61.48%,
+    0% 50%,
+    22.28% 38.52%,
+    14.64% 14.64%,
+    38.52% 22.28%,
+    50% 0%,
+    61.48% 22.28%,
+    85.36% 14.64%,
+    77.72% 38.52%
+  );
+  mix-blend-mode: exclusion;
+}
+
+@media (max-width: 680px) {
+  .content-section {
+    margin: 5vh auto;
+  }
+
+  .para-unique {
+    font-size: clamp(14px, 4vw, 22px);
+    margin-bottom: 1.5rem;
+  }
+
+  .cool-image {
+    height: 300px;
+  }
+}
