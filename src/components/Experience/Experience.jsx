@@ -3,7 +3,7 @@ import "./styles.css";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const timelineData = [
-  { year: "2025", title: "Sofelit", description: "Engineered a trading platform for CGS Singapore using React.js, Spring Boot & MySQL with high-performance backend." },
+  { year: "2025", title: "Sofelit Solution", description: "Engineered a trading platform for CGS Singapore using React.js, Spring Boot & MySQL with high-performance backend." },
   { year: "2023", title: "Rosemallow Technologies", description: "Built real estate & e-commerce apps with React.js and Spring Boot, ensuring secure data and smooth user experience." },
   { year: "2022", title: "Besant Technologies", description: "Hands-on MERN & Java stack training with mini-projects to sharpen full-stack skills." },
   { year: "2019", title: "MDT Hindu College", description: "Built strong foundations in software development, databases, and web design." },
